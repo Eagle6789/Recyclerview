@@ -1,4 +1,4 @@
-package codingwithmitch.com.recyclerview;
+package naga.com.recyclerview;
 
 import org.junit.Test;
 

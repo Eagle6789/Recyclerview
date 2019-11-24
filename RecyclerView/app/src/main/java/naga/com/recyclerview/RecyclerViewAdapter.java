@@ -1,4 +1,4 @@
-package codingwithmitch.com.recyclerview;
+package naga.com.recyclerview;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,11 +13,9 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+import naga.com.recyclerview.R;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
@@ -45,6 +43,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return holder;
     }
 
+    // Single element in the list
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
         Log.d(TAG, "onBindViewHolder: called.");
@@ -56,6 +55,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         holder.imageName.setText(mImageNames.get(position));
 
+        // On click moves to gallery activity
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,7 +76,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return mImageNames.size();
     }
 
-
+    // One item or element
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         CircleImageView image;

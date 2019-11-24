@@ -1,4 +1,4 @@
-package codingwithmitch.com.recyclerview;
+package naga.com.recyclerview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+
+import naga.com.recyclerview.R;
 
 /**
  * Created by User on 1/2/2018.
